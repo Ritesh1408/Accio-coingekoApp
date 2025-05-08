@@ -1,15 +1,89 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🪙 Crypto Market Tracker (React + Vite)
 
-Currently, two official plugins are available:
+A simple and responsive React app that fetches the top 10 cryptocurrencies using the CoinGecko API and displays them in a sortable and searchable table. Built with Vite for fast performance.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔁 **Real-time Data** from [CoinGecko API](https://www.coingecko.com/en/api)
+- 🔍 **Search** by coin name or symbol
+- 🔽 **Sort** by price and market cap (ascending & descending)
+- 🎛️ **Filter** by:
+  - Price range
+  - Market Cap range
+- 📱 Responsive and clean UI
 
-### API Link :
-- https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false
+
+## 📦 Tech Stack
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [CoinGecko API](https://api.coingecko.com)
+- JavaScript, HTML, CSS
+
+---
+
+## 🔗 API Endpoint Used
+
+```plaintext
+https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false
+````
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/crypto-table-react.git
+cd crypto-table-react
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the app
+
+```bash
+npm run dev
+```
+
+App will run at: `http://localhost:5173/`
+
+---
+
+## 📂 Folder Structure
+
+```
+/src
+  ├── App.jsx             # Main component with logic
+  ├── components/
+  │   └── CryptoRow.jsx   # Table row for each crypto
+  └── main.jsx            # React DOM rendering
+```
+
+---
+
+## 🧩 Future Improvements
+
+* Pagination for more coins
+* Responsive design improvements
+* Dark/light mode toggle
+* Unit tests
+
+---
+
+## 📄 License
+
+MIT License. Free to use and modify.
+
+---
+
+Let me know if you want this personalized with your GitHub repo or a screenshot preview!
+```
